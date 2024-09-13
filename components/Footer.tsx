@@ -1,12 +1,5 @@
-/*
- * @author: JP Lew (jp@cto.ai)
- * @date: Friday, 27th September 2019 2:07:05 pm
- * @lastModifiedBy: JP Lew (jp@cto.ai)
- * @lastModifiedTime: Friday, 27th September 2019 3:09:38 pm
- * @copyright (c) 2019 CTO.ai
- */
-
-import { FC } from "react"
+import { FC } from "react";
+import Link from "next/link";
 
 export const Footer: FC = () => {
   return (
@@ -14,12 +7,14 @@ export const Footer: FC = () => {
       <hr />
       <div className="container">
         <small className="text-muted">
-          Repo:&nbsp;
-          <a href="https://github.com/jplew/next-keycloak">
-            https://github.com/jplew/next-keycloak
-          </a>
+          Linkedin:&nbsp;
+          <Link href="https://www.linkedin.com/company/appnetwise/mycompany/" legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer">
+            https://www.linkedin.com/company/appnetwise/mycompany/
+            </a>
+          </Link>
         </small>
       </div>
     </footer>
-  )
-}
+  );
+};
